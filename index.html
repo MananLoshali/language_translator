@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Translation</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/35615bb673.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="heading_container">
+      <h1 class="heading">LANGUAGE TRANSLATOR</h1>
+    </div>
+    <div class="container">
+      <div class="box_left">
+        <textarea
+          placeholder="Type here"
+          id="from_text"
+          spellcheck="false"
+          class="ani"
+        ></textarea>
+        <div class="controls_left">
+          <select id="select_from" class="select_lan"></select>
+
+          <div class="controls">
+            <i
+              class="fa-solid fa-volume-high fa-beat-fade fa-lg"
+              id="sound_left"
+            ></i>
+          </div>
+          <div class="controls">
+            <i class="fa-solid fa-copy fa-beat-fade fa-lg" id="copy_before"></i>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="btn">
+          <button class="translate" id="translate_btn">Translate now</button>
+        </div>
+        <div>
+          <i class="fa-solid fa-arrow-right-arrow-left fa-2xl" id="exc_btn"></i>
+        </div>
+      </div>
+      <div class="box_right">
+        <textarea
+          placeholder="Output will appear here"
+          id="to_text"
+          readonly
+          spellcheck="false"
+        ></textarea>
+        <div class="controls_right">
+          <div class="controls">
+            <select id="select_to" class="select_lan"></select>
+          </div>
+          <div class="controls">
+            <i
+              class="fa-solid fa-volume-high fa-beat-fade fa-lg"
+              id="sound_right"
+            ></i>
+          </div>
+          <div class="controls">
+            <i class="fa-solid fa-copy fa-beat-fade fa-lg" id="copy_after"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
